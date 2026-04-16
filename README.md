@@ -18,7 +18,7 @@ pip3 install qrcode Pillow
 ## Usage
 
 ```bash
-python3 qr_generator.py --url "https://yourwebsite.com" --logo "Logos/your_logo.png"
+python3 qr_generator.py --url "https://website.com" --logo "Logos/your_logo.png"
 ```
 
 The output is saved as `qr_output.png` in the same directory by default.
@@ -38,27 +38,27 @@ The output is saved as `qr_output.png` in the same directory by default.
 
 **Basic — no logo:**
 ```bash
-python3 qr_generator.py --url "https://momentmuse.co.uk"
+python3 qr_generator.py --url "https://website.co.uk"
 ```
 
 **With a logo:**
 ```bash
-python3 qr_generator.py --url "https://momentmuse.co.uk" --logo "Logos/logo.png"
+python3 qr_generator.py --url "https://website.co.uk" --logo "Logos/logo.png"
 ```
 
 **Custom output filename:**
 ```bash
-python3 qr_generator.py --url "https://momentmuse.co.uk" --logo "Logos/logo.png" --output momentmuse_qr.png
+python3 qr_generator.py --url "https://website.co.uk" --logo "Logos/logo.png" --output momentmuse_qr.png
 ```
 
 **Custom brand colours:**
 ```bash
-python3 qr_generator.py --url "https://momentmuse.co.uk" --logo "Logos/logo.png" --fg "#2d1b69" --bg "#ffffff"
+python3 qr_generator.py --url "https://website.co.uk" --logo "Logos/logo.png" --fg "#2d1b69" --bg "#ffffff"
 ```
 
 **Higher resolution (larger file):**
 ```bash
-python3 qr_generator.py --url "https://momentmuse.co.uk" --logo "Logos/logo.png" --cell 30
+python3 qr_generator.py --url "https://website.co.uk" --logo "Logos/logo.png" --cell 30
 ```
 
 ## Hardcoded defaults
@@ -66,7 +66,7 @@ python3 qr_generator.py --url "https://momentmuse.co.uk" --logo "Logos/logo.png"
 If you prefer not to use command-line flags, you can edit the defaults at the top of `qr_generator.py`:
 
 ```python
-DEFAULT_URL  = "https://example.com"
+DEFAULT_URL  = "https://website.com"
 DEFAULT_LOGO = ""               # leave empty for no logo
 DEFAULT_OUT  = "qr_output.png"
 ```
