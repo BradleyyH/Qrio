@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #f5f5f4 0%, transparent 70%),
+    radial-gradient(800px 400px at 100% 100%, #fafaf9 0%, transparent 60%),
+    #ffffff;
+  font-feature-settings: "cv11", "ss01";
+}
